@@ -3,8 +3,13 @@
 import { useFormState } from "react-dom";
 
 import styles from "./LoginForm.module.scss";
+import { useEffect } from "react";
 
-function InputName({ onSubmit }: { onSubmit: (prevState: unknown, formData: FormData) => unknown }) {
+function InputName({
+  onSubmit,
+}: {
+  onSubmit: (prevState: unknown, formData: FormData) => unknown;
+}) {
   const [state, formAction] = useFormState(onSubmit, null);
 
   console.log(">>>>> InputName rendered!", state);
