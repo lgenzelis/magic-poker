@@ -6,19 +6,23 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "npm cache clean --force  && rm -rf .next && rm -f tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.2"
+    "next": "14.2.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "1.75.0",
+    "zod": "3.22.5"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.2"
+    "@types/node": "20.12.7",
+    "@types/react": "18.2.79",
+    "@types/react-dom": "18.2.25",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.2",
+    "prettier": "3.2.5",
+    "typescript": "5.4.5"
   }
 }
