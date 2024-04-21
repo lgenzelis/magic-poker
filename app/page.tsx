@@ -33,13 +33,16 @@ async function onSubmit(__prevState: unknown, formData: FormData) {
 
 const visitsKey = "visits";
 
+let a = 0;
+
 export default async function Home() {
-  const visits = await kv.get<number>(visitsKey);
+  const visits = await kv.incr(visitsKey);
   console.log(">>>>> [Home] visits", visits);
+  console.log(">>>>> [Home] a", a++);
   if (!visits) {
     const setRet = await kv.set(visitsKey, 1);
     console.log(">>>>> [Home] setRet", setRet);
-    const visitsAfterSet = await kv.get<number>(visitsKey);
+    const visitsAfterSet = await kv.get<number>(visitsKey, );
     console.log(">>>>> [Home] visitsAfterSet", visitsAfterSet);
   } else {
     const setRetElse = await kv.set(visitsKey, visits + 1);
