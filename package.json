@@ -10,22 +10,22 @@
     "clean": "npm cache clean --force  && rm -rf .next && rm -f tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@vercel/kv": "1.0.1",
-    "next": "14.2.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "sass": "1.75.0",
-    "uuid": "9.0.1",
-    "zod": "3.22.5"
+    "@vercel/kv": "2.0.0",
+    "next": "14.2.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "sass": "1.77.6",
+    "uuid": "10.0.0",
+    "zod": "3.23.8"
   },
   "devDependencies": {
-    "@types/node": "20.12.7",
-    "@types/react": "18.2.79",
-    "@types/react-dom": "18.2.25",
-    "@types/uuid": "9.0.8",
+    "@types/node": "20.14.9",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@types/uuid": "10.0.0",
     "eslint": "8.57.0",
-    "eslint-config-next": "14.2.2",
-    "prettier": "3.2.5",
-    "typescript": "5.4.5"
+    "eslint-config-next": "14.2.4",
+    "prettier": "3.3.2",
+    "typescript": "5.5.2"
   }
 }
